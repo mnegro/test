@@ -1,0 +1,47 @@
+//Variables
+
+$colorbg: rgb(49, 199, 233);
+$tiltecolor: rgb(60, 27, 94);
+$menucolor: blue;
+$titlesize: 32px;
+$textsize: 18px;
+$textcolor: red;
+
+
+//mixings///Functions
+
+@mixin fontStyle($color,$size) {
+        font-size:$size;
+        color: $color;
+
+}
+body{
+    background-color: $colorbg;
+}
+h1{
+    @include fontStyle($tiltecolor,$titlesize );
+
+}
+p{
+    @include fontStyle($textcolor, $textsize);
+}
+
+//anidaciones/Nesting
+.menu__container{
+    list-style: none;
+    margin: 60px 0px;
+    .menu__container--item{
+        display: inline-block;
+        margin: 2px;
+        a{
+            padding: 15px;
+            text-decoration: none;
+            background-color: $menucolor;
+            color: blanchedalmond;
+        }
+    }
+}
+
+
+
+
