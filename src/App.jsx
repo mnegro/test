@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header/>
       <h1>Paginado</h1>
-
+      <h3>Maxi</h3>
       <Pages />
     </div>
   );
